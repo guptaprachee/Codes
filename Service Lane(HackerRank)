@@ -1,0 +1,15 @@
+Hackerrank link for the question: 
+https://www.hackerrank.com/challenges/service-lane/problem
+
+This is not the complete code, only the fuction that was asked to complete.
+------------------------------------------------------------------------------------------
+def serviceLane(n, cases):
+    a=[]
+    for i in cases:
+        c=3
+        for j in range(i[0],i[1]+1):
+            if width[j]<c:
+                c=width[j]
+        a.append(c)
+    return a
+#########################################################################################
